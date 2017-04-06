@@ -20,3 +20,4 @@ class JBot(object):
         self.__updater.start_polling(clean=True)
         self.__updater.idle()
 
+

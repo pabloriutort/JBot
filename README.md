@@ -10,14 +10,14 @@ For running it you have to do something like:
 docker build -t j_bot .
 docker run -d --env-file <your envs> --name j_bot j_bot
 ```
-__Env file__ It's a file for the Docker container where you can put env variables. The bot token should be named `BOT_TOKEN` and lives in this file.
 
+[Env file](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) it's a file for the Docker container where you can put env variables. The bot token should be named `BOT_TOKEN` and lives in this file.
 
 ## Commands
 The funny part of this bot is how its commands are defined.  
 For now* we have decorators for:
 * __@reply__  Uses `udpdate.message.reply_text()`
-* __@text__  Uses `bot.send_message()`
+* __@text__  Uses [bot.send_message()](https://core.telegram.org/bots/api#sendmessage)
 
 _*more will come_
 
