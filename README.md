@@ -27,9 +27,9 @@ from decorators import text
 
 @text
 def send_text(args):
-    return "This message will be send when `/send_text` is called"
+    return "This message will be sent when `/send_text` is called"
 ```
 
 * `args` contain a list of whatever comes after the command `/command <args>`
 * This is a well defined command, the decorator takes care of returning the response with the bot
-* All comands must return something
+* All commands must return something
