@@ -1,5 +1,3 @@
-
-
 def get_params(args, only_args=False):
     """Returns bot and params separately
     
